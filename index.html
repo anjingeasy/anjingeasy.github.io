@@ -325,8 +325,8 @@
                 </a>
 
                 
-                    <a href="https://live.bilibili.com/541498" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>我的直播间
+                    <a href="https://space.bilibili.com/6255229" class="waves-effect waves-light btn" target="_blank">
+                        <i class="fab fa-github-alt"></i>我的视频空间
                     </a>
                 
             </div>
@@ -433,6 +433,41 @@
                     
 
                     
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;安静的最新视频
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                    ></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: '',
+                pic: '',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
+                    
 
                     
                 </div>
@@ -441,6 +476,41 @@
     </div>
     
 
+    
+        
+
+<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="">
+    
+    <div class="title center-align">
+        <i class="fas fa-music"></i>&nbsp;&nbsp;听听音乐
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: 'true' === 'true',
+        autoplay: 'true' === 'true',
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: Number('0.7'),
+        listFolded: 'false' === 'true',
+        listMaxHeight: '',
+        audio: eval([{"name":"夏日、教室与望着窗外的我","artist":"Candy_Wind","url":"/medias/music/Candy_Wind - 夏日、教室与望着窗外的我.mp3","cover":"/medias/music/Candy_Wind - 夏日、教室与望着窗外的我.jpg"},{"name":"どれだけ希望を持ったのか","artist":"中山真斗","url":"/medias/music/中山真斗 - どれだけ希望を持ったのか.mp3","cover":"/medias/music/中山真斗 - どれだけ希望を持ったのか.jpg"},{"name":"靴下をはいた猫","artist":"Foxtail-Grass Studio","url":"/medias/music/Foxtail-Grass Studio - 靴下をはいた猫.mp3","cover":"/medias/music/Foxtail-Grass Studio - 靴下をはいた猫.jpg"}])
+    });
+});
+</script>
     
 
     
